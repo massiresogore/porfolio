@@ -1,0 +1,53 @@
+@media (min-width:700px) {
+   
+    header{
+       
+        color: rgba(26, 25, 25, 0.567);
+        text-align: initial;
+        line-height: 1.5;
+        .desc{
+            //padding: 15rem 154px 14rem 154px;
+            //padding: calc(13rem - 70px) 154px calc(16rem - 40px) 154px;
+            // padding-left:154px ;
+            // padding-right: 154px;
+        }
+        
+    }
+    header .header__title{
+        font-size: 8rem;
+      
+    }
+   
+    .header__description{
+        //font-size: 2.5rem;
+        padding-block-end: initial;
+    } 
+  
+
+}
+
+@media (min-width:800px) {
+    header{
+        .desc {
+
+             h1{
+
+                font-size: 300%;
+            }
+            span.header__title{
+                font-size: 200%;
+            }
+        }
+        .header__description{
+            font-size: 150%;
+        }
+
+      
+        
+    }
+}
+@media (min-width:900px) {
+    header{
+        height: calc(85vh - 90px);
+    }
+}

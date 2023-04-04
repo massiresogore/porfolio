@@ -1,0 +1,66 @@
+// movedouwn
+.flash{
+    animation: downMov .5s both;
+}
+@keyframes downMov {
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+//slide-up
+@keyframes slide-up {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+//toUp
+@keyframes toUp {
+    from{
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+//focus
+@keyframes focusWithin {
+    from{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+//form 
+@keyframes shake {
+    20%,40%,60%,80% {
+      transform: translateX(10%);
+    }
+    10%,30%,50%,70%,90% {
+      transform: translateX(-10%);
+    }
+    from,to {
+      transform: none;
+    }
+}
+  

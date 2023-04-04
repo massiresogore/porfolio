@@ -1,0 +1,159 @@
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+   
+ box-sizing: inherit;
+}
+
+
+
+body{
+    font-family: 'jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.body > div.session{
+    background: var(--background-black);
+    padding: 4rem;
+}
+
+nav,header{
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+
+}
+
+
+@media (min-width:1230px){
+    header{
+        padding-inline-start: initial;
+        padding-inline-end: initial;
+    }
+    
+}
+@media (min-width:700px){
+    nav,header{
+        padding-inline-start: 122px;
+        padding-inline-end: 122px;
+    }
+    
+}
+
+
+
+
+
+
+#arrow{
+    display: inline-block;
+    width: fit-content;
+   font-weight: bolder;
+   color: var(--color-yellow);
+   background: #024959;
+   border: .5px solid white;
+   padding: 0 2rem;
+   border-radius: 5px;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all .2s;
+   margin-inline-start: 10px;
+   &:hover {
+       box-shadow: 0 0 1rem rgb(255, 255, 255);
+      
+   }
+   &:active{
+    transform: translateX(1rem);
+   }
+
+}
+@media (min-width: 700px){
+    #arrow{
+        //font-size: 2rem;
+    }
+}
+
+
+.flash-color{
+    background: var(--background-black);
+    visibility: hidden;
+}
+
+
+
+.flash{
+    padding: 4rem;
+    font-size: 2.6rem;
+    color: #EEEEEE;
+    background-color: #024959;
+    text-align: center;
+}
+
+
+.session {
+    background: var(--background-black);
+}
+.visibilityHidden{
+visibility: hidden;
+
+}
+.visibilityVisible{
+visibility: visible;
+
+}
+  
+  
+//button up > 700
+.btn__top{
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    color: #f2cb05d1;
+    background-color: #f23030a6;
+    border: 0.5px solid #f23030c2;
+    border-radius: 5px;
+    border-radius: 20px;
+    height: 31px;
+    width: 31px;
+   text-align: center;
+    cursor: pointer;
+    transition: all .2s;
+    animation-name: toUp;
+    animation-duration: .7s;
+    animation-fill-mode: backwards;
+    display: none;
+
+}
+.btn__top:hover{
+     box-shadow: 0 0 1rem rgb(255, 255, 255);
+     transform: scale(1.5);
+}
+.btn__top:active{
+    transform: translateY(-1rem);
+}
+
+
+
+
+
+
+
+
+
+
+
+

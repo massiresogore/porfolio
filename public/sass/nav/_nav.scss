@@ -1,0 +1,122 @@
+nav{
+
+    background: var(--background-black);
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+}
+.nav{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //grid-template-columns: repeat(2,1fr);
+   // grid-template-columns: .2fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    //align-items: center;
+    
+    // display: grid;
+    // place-items: center;
+  
+    position: relative;
+    .nav__width{
+        // max-width: 1100px;
+        // margin: 0 auto;
+        // border: 1px solid red;
+    }
+    ul{
+      
+     
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 2rem;
+      
+    }
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        font-family: var(--font-family-futura);
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--secondary-color-black);
+    }
+    a.btn{
+        background-color: var(--color-red);
+        border-radius: 5px;
+        padding: .7rem;
+       color: var(--primary-color-black-hover);
+        color: var(--secondary-color-black);
+        
+    }
+
+    a:focus, a:hover{
+        //color: var(--color-yellow);
+        color: var(--color-yellow);
+        
+    }
+
+    #active{
+      color: var(--color-yellow);
+      font-size: 150%;
+      //text-transform: lowercase;
+      font-family: "Snell Roundhand";
+     
+    }
+
+}
+
+// #active{
+//     font-family: "Snell Roundhand";
+//        color: var(--color-yellow);
+//        font-size: 4rem;
+//     text-transform: lowercase; 
+// }
+
+// nav ul{
+  
+//     list-style-type: none;
+//     display: flex;
+//     flex-flow: row wrap;
+//     gap: 1.3rem;
+
+  
+// }
+
+// nav a{
+//     padding: 0.7rem;
+//     color: var(--secondary-color-black);
+//     //font-family: 'Jost', sans-serif;
+//     font-family: var(--font-family-futura);
+//     text-transform: uppercase;
+//     font-weight: bold;
+//     font-size: 2rem;
+//     text-decoration: none;
+//     letter-spacing: 2px;
+// }
+
+
+// nav a:visited{
+//     color: var(--secondary-color-black);
+// }
+
+
+// nav a:focus{
+//     color:var(--color-orange-secondary) ;
+// }
+
+// nav a.btn{
+//     background-color: var(--color-red);
+//     border-radius: 5px;
+//     color: var(--primary-color-black-hover);
+// }
+// nav a.btn:focus{
+//   color: var(--primary-color-black);
+// }
+
+

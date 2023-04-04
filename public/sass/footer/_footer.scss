@@ -1,0 +1,42 @@
+footer{
+    text-align: center;
+  background: var(--background-black);
+  color: aliceblue;
+ 
+  padding: 2rem 0;
+
+ span{
+    color: var(--color-orange-secondary);
+ }
+ span:hover{
+    color: var(--color-orange-primary);
+ }
+
+    ul{
+      
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 3rem;
+        align-items: center;
+        margin: 2.2rem 0;
+        font-size: 200%;
+        padding: 0;
+    }
+
+    a{
+        color: aliceblue;
+    }
+}
+
+@media (min-width:700px){
+    footer{
+        font-size: 150%;
+    }
+}
+@media (min-width:900px){
+    footer{
+        font-size: 210%;
+    }
+}

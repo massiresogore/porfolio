@@ -1,0 +1,39 @@
+@media (min-width:800px) {
+   nav{
+    
+        ul{
+            //justify-content: flex-end;
+        }
+        #active{
+            //justify-self: flex-start;
+         }
+ 
+   }
+   .nav{
+      //justify-content: space-between;
+      //padding: 0 7rem;
+      font-size: 200%;
+      ul{
+         gap: 4rem;
+         justify-self: end;
+      }
+   }
+  
+   .nav__link:hover{
+      color:var(--color-orange-secondary) ;
+     
+   } 
+   #active{
+      color: var(--color-yellow);
+     font-size: 170%;
+    }
+}
+@media (min-width:700px) {
+  
+   .nav{
+    
+     
+   }
+  
+ 
+}

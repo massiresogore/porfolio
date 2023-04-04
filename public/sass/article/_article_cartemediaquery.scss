@@ -1,0 +1,106 @@
+@media (min-width:900px) {
+    
+    .article-cart{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        align-items: center;
+        //padding: 0 1.2rem 10rem;
+        //font-size: 3.2rem;
+  
+        .text{
+            grid-column: 6/11;
+            grid-row: 1/2;
+            order: 2;
+            text-align: right;
+        }
+        p{
+           //font-size: 2rem;
+           max-width: initial;
+        }
+        img{
+            grid-column: 1/6;
+            grid-row: 1/2;
+          
+        }
+
+        ul{
+            border-radius: 10px;
+            justify-content: end;
+        }
+
+        
+    }
+
+    // Reverse
+    .article-cart-reverse{
+       
+  
+        .text{
+            grid-column: 1/6;
+            grid-row: 1/2;
+            order: 2;
+            text-align: left;
+        }
+        p{
+           //font-size: 2rem;
+          // max-width: initial;
+        }
+        img{
+            max-width: initial;
+            grid-column: 6/11;
+            grid-row: 1/2;  
+            border-right: 1px solid var(--img-border );
+            border-left: initial;//1px solid var(--img-border );
+        }
+        // img{
+        //     padding: 2rem;
+        //     margin-block-start: 2rem;
+        //     border-top: 1px solid var( --img-border);
+        //     border-radius: 20px;
+        //     max-width: 80%;
+           
+        // }
+
+        ul{
+            justify-content: start;
+        }
+    }
+
+    
+}
+
+@media (min-width:700px) {
+    .article-cart{
+        p{
+           //font-size: 2rem;
+           //padding: 2rem;
+           max-width: initial;
+        }
+        .article-cart-reverse{
+       
+            p{
+               //font-size: 2rem;
+               max-width: initial;
+            }
+        }
+    }
+
+}
+@media (min-width:1000px) {
+    .article-cart{
+        p{
+          
+           //padding: 7rem;
+        }
+    }
+
+}
+@media (min-width:1200px) {
+    .article-cart{
+        p{
+          font-size: 100%;
+           //padding: 7rem;
+        }
+    }
+
+}
