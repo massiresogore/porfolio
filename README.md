@@ -3,7 +3,7 @@ email: sogoremassire@gmail.com
 Fin de la partie backen v1.0
 le 09 Janvier 2023
 
-cree avec html css js et php
+cree avec html css (scss) js et php
 
 connection à la base de donnée:
 pour que l'envoie de contact fonctionne il faut pour ma part:
