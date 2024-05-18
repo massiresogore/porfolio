@@ -21,3 +21,32 @@ php -S localhost:8000 -t public
 
 
 
+# developpeur java pré requis
+    Spring Boot Kubernetes Kotlin Jira Jenkins GitLab Docker Confluence
+
+# développeur confirmé java Angular 
+    5G  Java
+
+# DEVELOPPEUR JAVA/KOTLIN EN CDI A NANTES (H/F)
+Terraform
+
+Spring Boot
+
+Kubernetes
+
+Kotlin
+
+Jira
+
+Gradle
+
+GitLab
+
+Docker
+
+## répétitif
+PostGreSQL /SQL Server, Kafka, Docker et Kubernetes
+
+
+
+
