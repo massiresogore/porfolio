@@ -1,0 +1,95 @@
+@layer base {
+    :root {
+        --base-size: 1rem;
+        --scale: 1.25;
+        --radius: 5px;
+        --h1: calc(var(--h2) * var(--scale));
+        --h2: calc(var(--h3) * var(--scale));
+        --h3: calc(var(--h4) * var(--scale));
+        --h4: calc(var(--h5) * var(--scale));
+        --h5: calc(var(--h6) * var(--scale));
+        --h6: var(--base-size);
+
+        /*Font*/
+        --sans-serif: sans-serif;
+        --default-color: #FFFFFF;
+
+        /*Input*/
+        --input-margin-left: 9px;
+        --input-height: 32px;
+        --marge-bottom-input: 10px;
+
+        /*Form*/
+        --form-paddind: 10px
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        font-size: var(--base-size);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 300;
+        line-height: 1.3;
+    }
+
+    h1 {
+        font-size: var(--h1);
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: var(--h2);
+    }
+
+    h3 {
+        font-size: var(--h3);
+    }
+
+    h4 {
+        font-size: var(--h4);
+    }
+
+    h5 {
+        font-size: var(--h5);
+    }
+
+    h6 {
+        font-size: var(--h6);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/********** Nav **********/
+#container{
+}
+#main{
+    position: absolute;
+    inset: 0;
+    display: grid;
+}
+.massire-image{
+    position: relative;
+}
+
+.massire-name{
+}
+.description{
+}
+.nav{
+
+}
