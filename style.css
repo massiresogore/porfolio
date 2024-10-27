@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Peralta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
 @layer base {
     :root {
         --base-size: 1rem;
@@ -34,7 +39,9 @@
     body {
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
+        font-family: "ADLaM Display", system-ui;
+        font-weight: 400;
+        font-style: normal;
         font-size: var(--base-size);
     }
 
@@ -75,21 +82,60 @@
 
 
 /********** Nav **********/
+body{
+    color: #1C1D20;
+}
 #container{
 }
-#main{
-    position: absolute;
-    inset: 0;
-    display: grid;
+
+#header,main{
+    padding-inline: clamp(1.25em, 4vw, 2.5em);
+
 }
-.massire-image{
+#header{
+    color: var(--default-color);
+    display: grid;
+    height: 630px;
+    padding-inline: clamp(1.25em, 4vw, 2.5em);
     position: relative;
+    background-color:  rgba(15, 21, 37, .8);
 }
 
-.massire-name{
-}
-.description{
+
+#header p{
+    margin: 0;
 }
 .nav{
 
+    display: flex;
+    justify-content: space-between;
+}
+.massire-image{
+    position: absolute;
+    inset: 0;
+    height: 630px;
+    z-index: -1;
+}
+#header .description{
+    align-content: center;
+}
+
+.massire-name{
+    font-size: max(5em, 15vw);
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+
+}
+.description{
+    font-size: clamp(1.55em,2.3vw, 2.5rem);
+}
+.nav{
+    padding-block-start: 24px;
+}
+.main p{
+    text-align: justify;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
