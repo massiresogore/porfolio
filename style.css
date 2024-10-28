@@ -82,13 +82,14 @@
 
 
 /********** Nav **********/
+/*** 711 **/
 body{
     color: #1C1D20;
 }
 #container{
 }
 
-#header,main{
+#header, section{
     padding-inline: clamp(1.25em, 4vw, 2.5em);
 
 }
@@ -99,6 +100,7 @@ body{
     padding-inline: clamp(1.25em, 4vw, 2.5em);
     position: relative;
     background-color:  rgba(15, 21, 37, .8);
+
 }
 
 
@@ -132,10 +134,40 @@ body{
 .nav{
     padding-block-start: 24px;
 }
-.main p{
+.section-1 p{
     text-align: justify;
     font-family: "Afacad", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    color: white;
+   /* margin-block-start: 74px;*/
+    margin: 0;
+    padding-block: 32px;
+
 }
+.section-1 {
+    position: relative;
+}
+
+.section-1::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #BA007B;
+    inset: 0;
+    z-index: -1;
+}
+
+.section-2{
+  /*  background:linear-gradient(to bottom top,#007BBA 0%, #00527B 50%, #003854 100%) bottom right;*/ 
+  
+   background-image: linear-gradient(to bottom right,#FF1794 0%, #FFF037 7.41%, #39ED94 13.72%, #00B0EC 25.23%, #FF1794 34.56%, #FFF037 40.76%, #39ED94 50%) bottom right;
+    background-size:50% 50%;
+   background-repeat:no-repeat;
+}
+.section-2 h3{
+    margin: 0;
+}
+
+
