@@ -131,9 +131,29 @@ body{
 .description{
     font-size: clamp(1.55em,2.3vw, 2.5rem);
 }
+.ville{
+    /* border-right-width: 10px;
+    border-right-color: #BA007B;
+    border-right-style: solid; */
+    border-left-width: 10px;
+    border-left-color: #BA007B;
+    border-left-style: solid;
+    width: max-content;
+    /* padding-right: 10px; */
+    padding-left: 10px;
+
+    align-self: end;
+}
 .nav{
     padding-block-start: 24px;
 }
+#section-container {
+    background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);
+}
+#section-container section {
+    padding-block-end: 3.5rem;
+}
+
 .section-1 p{
     text-align: justify;
     font-family: "Afacad", sans-serif;
@@ -144,7 +164,7 @@ body{
    /* margin-block-start: 74px;*/
     margin: 0;
     padding-block: 32px;
-    padding-bottom: calc(80.63px - 12px);
+    padding-bottom: calc(81px - 12px);
 
 }
 .section-1 {
@@ -164,7 +184,7 @@ body{
     padding-inline: 0;
     color: white;
     /* background: linear-gradient(360deg, rgba(0, 123, 186, 1) 0%, rgba(0, 82, 123, 1) 50%, rgba(0, 56, 84, 1) 100%); */
-    background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);
+    /* background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%); */
 
     text-align: justify;
 }
@@ -179,18 +199,7 @@ body{
     background-color: #022739;
 }
 
-.ville{
-    /* border-right-width: 10px;
-    border-right-color: #BA007B;
-    border-right-style: solid; */
-    border-left-width: 10px;
-    border-left-color: #BA007B;
-    border-left-style: solid;
-    width: max-content;
-    /* padding-right: 10px; */
-    padding-left: 10px;
 
-    align-self: end;}
 
 .section-2 .content{
     display: flex;
@@ -207,6 +216,49 @@ body{
     position: relative;
 }
 .section-2 .main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/********** Section 3 **********/
+
+.section-3{
+    padding-inline: 0;
+    color: white;
+    /* background: linear-gradient(360deg, rgba(0, 123, 186, 1) 0%, rgba(0, 82, 123, 1) 50%, rgba(0, 56, 84, 1) 100%); */
+    /* background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%); */
+
+    text-align: justify;
+}
+
+.section-3 h3{
+    margin: 0;
+    padding-inline: clamp(0.55em, 4vw, 2.5em);
+}
+
+ section h3{
+    padding-block: 20px;
+    background-color: #022739;
+}
+
+
+
+.section-3 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* padding-block: 32px; */
+}
+.section-3 .titre{
+    font-size: clamp(1.55em, 2.3vw, 2.5rem);
+    width: 70%;
+    background: white;
+    color: #1C1D20;
+    bottom: 2.5rem;
+    position: relative;
+}
+.section-3 .main{
     display: flex;
     flex-direction: column;
     gap: 30px;
