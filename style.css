@@ -221,36 +221,86 @@ body{
     gap: 30px;
 }
 
-/********** Section 3 **********/
 
+/********** Section 3 **********/
 .section-3{
+}
+
+.section-3 h3{
+    margin-top:0;
+    background-color: white;
+    width: 70%;
+    position: relative;
+    right: 20px;
+    padding-left: 20px;
+}
+
+.icon-arrow-right{
+    width: 14%;
+    
+}
+
+.sub-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********** Section 3 **********/
+/*
+.section-4{
     padding-inline: 0;
     color: white;
-    /* background: linear-gradient(360deg, rgba(0, 123, 186, 1) 0%, rgba(0, 82, 123, 1) 50%, rgba(0, 56, 84, 1) 100%); */
-    /* background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%); */
+     background: linear-gradient(360deg, rgba(0, 123, 186, 1) 0%, rgba(0, 82, 123, 1) 50%, rgba(0, 56, 84, 1) 100%); 
+     background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%); 
 
     text-align: justify;
 }
 
-.section-3 h3{
+.section-3 h4{
     margin: 0;
     padding-inline: clamp(0.55em, 4vw, 2.5em);
 }
 
- section h3{
+ section h4{
     padding-block: 20px;
     background-color: #022739;
 }
 
 
 
-.section-3 .content{
+.section-4 .content{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* padding-block: 32px; */
 }
-.section-3 .titre{
+.section-4 .titre{
     font-size: clamp(1.55em, 2.3vw, 2.5rem);
     width: 70%;
     background: white;
@@ -258,8 +308,8 @@ body{
     bottom: 2.5rem;
     position: relative;
 }
-.section-3 .main{
+.section-4 .main{
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
+}*/
