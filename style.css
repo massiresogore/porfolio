@@ -80,11 +80,21 @@
     }
 }
 
+/*
+    max-width:615px
+*/
+
 
 /********** Nav **********/
 /*** 711 **/
 body{
     color: #1C1D20;
+}
+.border-left-rose{
+    border-left-width: 10px;
+    border-left-color: #BA007B;
+    border-left-style: solid;
+    padding-left: 10px;
 }
 #container{
 }
@@ -129,7 +139,7 @@ body{
 
 }
 .description{
-    font-size: clamp(1.55em,2.3vw, 2.5rem);
+    /*font-size: clamp(1.55em,2.3vw, 2.5rem);*/
 }
 .ville{
     /* border-right-width: 10px;
@@ -181,6 +191,7 @@ body{
 }
 
 .section-2{
+    margin-block-start: 3rem;
     padding-inline: 0;
     color: white;
     /* background: linear-gradient(360deg, rgba(0, 123, 186, 1) 0%, rgba(0, 82, 123, 1) 50%, rgba(0, 56, 84, 1) 100%); */
@@ -212,8 +223,7 @@ body{
     width: 70%;
     background: white;
     color: #1C1D20;
-    bottom: 2.5rem;
-    position: relative;
+ 
 }
 .section-2 .main{
     display: flex;
@@ -229,8 +239,12 @@ body{
 .section-3 h3{
     margin-top:0;
     background-color: white;
-    width: 70%;
     position: relative;
+    right: 20px;
+    padding-left: 20px;
+    margin-top: 0;
+    width: 105%;
+    bottom: 40px;
     right: 20px;
     padding-left: 20px;
 }
@@ -240,16 +254,58 @@ body{
     
 }
 
+
+
+.block-1{
+    position: relative;
+    max-width: 615px;
+
+    padding: 62px 30px 62px;
+    background: #F1EFEC;
+}
+.block-1 h3{
+    bottom: 2.5rem;
+    position: relative;
+    
+    
+}
+.block-1 .description{
+    display: none;
+    color: #FFFFFF;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.description h5{
+    margin: 0;
+}
+
 .sub-title{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 10px;
+}
+.description-footer{
+    position: absolute;
+left: 0;
+bottom: -73px;
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #022739;
+    padding-inline: 7%;
+    padding-block: clamp(3%,6%,3%);
 }
 
-
-
-
-
+.section-3 .description p{
+    margin: 0;
+}
 
 
 
