@@ -127,6 +127,7 @@ body{
     inset: 0;
     height: 630px;
     z-index: -1;
+   
 }
 #header .description{
     align-content: center;
@@ -136,7 +137,12 @@ body{
     font-size: max(5em, 15vw);
     align-content: center;
     font-family: "Poppins", sans-serif;
-
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 3px;
+}
+.massite-dot{
+    color:  #BA007B;;
 }
 .description{
     /*font-size: clamp(1.55em,2.3vw, 2.5rem);*/
