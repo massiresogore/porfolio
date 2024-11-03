@@ -144,8 +144,8 @@ body{
 .massite-dot{
     color:  #BA007B;;
 }
-.description{
-    /*font-size: clamp(1.55em,2.3vw, 2.5rem);*/
+#header .description{
+    font-size: clamp(1.55em,2.3vw, 2.5rem);
 }
 .ville{
     /* border-right-width: 10px;
@@ -352,10 +352,64 @@ bottom: -73px;
 .heure-locale{
     opacity: .5;
 }
+.nav-link{
+    display: none;
+}
 
+/*Appear NavBar*/
+@media (min-width: 544px) {
+    .nav-burger{
+        display: none;
+        
+    }
+    .nav-link{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin: 0;
+    }
+    body{
+       
+    }
+    #header{
+        background-color: rgba(15, 21, 37, 0.5);
+        grid-template-rows: 1fr .1fr 1fr;
+    }
 
-
-
+    #header p{
+        align-content: flex-start;
+    }
+    #header .description{
+        justify-self: flex-end;
+    }
+     .massire-name{
+        font-size: clamp(5em, 2em,15vw);
+    }
+}
+/*Appear NavBar*/
+@media (min-width: 776px) {
+    #header{
+        grid-template-columns: 1fr .5fr .5fr;
+        grid-template-rows: .4fr .2fr .3fr;
+        height: 100vh;
+    }
+    #header p{
+       align-content: center;
+    }
+    .nav{
+        grid-column: 1/4;
+    }
+    .massire-name{
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
+   #header .description{
+    align-content: end;
+    justify-self: center;
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+}
 
 
 
