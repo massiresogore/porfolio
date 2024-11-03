@@ -30,13 +30,13 @@
         <div id="section-container">
             
 
-            <!---------- Section 3 ---------->
-            <section class="section-3">
+            <!---------- Section Projet ---------->
+            <section class="section-projet">
                 <h3>Projets</h3>
 
-                <div class="section-3-container">
+                <div class="section-projet-container">
                     <div class="block-1">
-                      <img src="./images/projets/projet2.png" alt="">
+                      <img src="./images/projets/projet1.png" alt="">
                         <div class="description">
                             <h5 class="projet-title">projet Javascript</h3>
                             <div class="sub-title">
@@ -51,13 +51,46 @@
                            <span class="border-left-rose"> 2024</span>
                         </div>
                     </div>    
-                  
+
+                    <div class="block-2">
+                      <img src="./images/projets/projet2.png" alt="">
+                        <div class="description">
+                            <h5 class="projet-title">projet Javascript</h3>
+                            <div class="sub-title">
+                                <span> Formulaire</span>
+                                    <img class="icon-arrow-right" src="./images/icons/icon-arrow-right.svg" alt="">
+                            </div>
+                            <p class="description-text">Reproduire un formulaire existant au format PDF en utilisant HTML et CSS.</p>
+                           
+                        </div>
+                        <div class="description-footer">
+                            <p>Dashboard</p>
+                           <span class="border-left-rose"> 2024</span>
+                        </div>
+                    </div>    
+
+                    <div class="block-3">
+                      <img src="./images/projets/blog.png" alt="">
+                        <div class="description">
+                            <h5 class="projet-title">projet Javascript</h3>
+                            <div class="sub-title">
+                                <span> Formulaire</span>
+                                    <img class="icon-arrow-right" src="./images/icons/icon-arrow-right.svg" alt="">
+                            </div>
+                            <p class="description-text">Reproduire un formulaire existant au format PDF en utilisant HTML et CSS.</p>
+                           
+                        </div>
+                        <div class="description-footer">
+                            <p>Blog</p>
+                           <span class="border-left-rose"> 2024</span>
+                        </div>
+                    </div>    
      
                 </div>
                
             </section>
 
-            <section class="section-2">
+            <section class="section-formation">
                 <h3 class="Formations titre">Formations</h3>
               <div class="main">
                 <div class="content">
@@ -83,6 +116,20 @@
                </div>
               </div>
             </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!---------- Section 3 ---------->
             <!--  <section class="section-3">
                 <h3 class="Formations titre">Compétences</h3>
@@ -96,7 +143,33 @@
         </div>
 
 
-
+        <footer id="footer">
+                <div class="social">
+                    <div class="social-titre social-reseau">Réseau Social</div>
+                    <div class="social-container">
+                        <p>Linkedin</p>
+                        <p>X</p>
+                        <p>Facebook</p>
+                        <p>Instagram</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright">
+                    <div class="">
+                        <p class="version">Version</p>
+                        <p>2024 © Edition</p>
+                    </div>
+                    <div class="Heure locale">
+                        <p class="heure-locale">Heure locale</p>
+                        <span class="" style="color: #fff;" id="time"></div>
+                    </div>
+                </div>
+              
+        </footer>
     </div>
+
+    <script >
+        document.querySelector("#time").textContent =  new Date().toLocaleString();;
+    </script>
 </body>
 </html>

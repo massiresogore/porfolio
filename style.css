@@ -190,8 +190,8 @@ body{
     z-index: -1;
 }
 
-.section-2{
-    margin-block-start: 3rem;
+.section-formation{
+    margin-block-start: 6rem;
     padding-inline: 0;
     color: white;
     /* background: linear-gradient(360deg, rgba(0, 123, 186, 1) 0%, rgba(0, 82, 123, 1) 50%, rgba(0, 56, 84, 1) 100%); */
@@ -200,7 +200,7 @@ body{
     text-align: justify;
 }
 
-.section-2 h3{
+.section-formation h3{
     margin: 0;
     padding-inline: clamp(0.55em, 4vw, 2.5em);
 }
@@ -212,20 +212,23 @@ body{
 
 
 
-.section-2 .content{
+.section-formation .content{
     display: flex;
     flex-direction: column;
     gap: 10px;
     /* padding-block: 32px; */
 }
-.section-2 .titre{
+.section-formation .titre{
     font-size: clamp(1.55em, 2.3vw, 2.5rem);
-    width: 70%;
+    /*width: 70%;*/
+    width: 96%;
+    max-width: 643px;
     background: white;
     color: #1C1D20;
  
 }
-.section-2 .main{
+.section-formation .main{
+    padding-block-start: 60px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -233,10 +236,10 @@ body{
 
 
 /********** Section 3 **********/
-.section-3{
+.section-projet{
 }
 
-.section-3 h3{
+.section-projet h3{
     margin-top:0;
     background-color: white;
     position: relative;
@@ -256,20 +259,27 @@ body{
 
 
 
-.block-1{
+.block-1,
+.block-2,
+.block-3
+{
     position: relative;
     max-width: 615px;
-
     padding: 62px 30px 62px;
     background: #F1EFEC;
 }
-.block-1 h3{
+.block-1 h3
+{
     bottom: 2.5rem;
     position: relative;
     
     
 }
-.block-1 .description{
+.block-1 .description,
+.block-2 .description,
+.block-3 .description
+
+{
     display: none;
     color: #FFFFFF;
     position: absolute;
@@ -303,20 +313,39 @@ bottom: -73px;
     padding-block: clamp(3%,6%,3%);
 }
 
-.section-3 .description p{
+.section-projet .description p{
     margin: 0;
 }
 
 
 
+.section-projet-container{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
 
+#footer{
+    color: white;
+    /*background-color: rgba(15, 21, 37, .8);*/
+    background: #022739;
+    padding-inline: clamp(1.25em, 4vw, 2.5em);
+    padding-block: 2rem;
+}
+.social-container{
+    display: flex;
+    gap: 20px;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
-
-
-
-
+.social-reseau,
+.version,
+.heure-locale{
+    opacity: .5;
+}
 
 
 
