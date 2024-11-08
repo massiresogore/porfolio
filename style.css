@@ -88,6 +88,23 @@
 
 
 /********** Nav **********/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-link{
+    display: none;
+}
+
+/*Appear NavBar*/
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
 /*** 711 **/
 body{
     color: #1C1D20;
@@ -101,7 +118,13 @@ body{
 #container{
 }
 
-#header, section, .content, .projet, .description-principale{
+#header,
+ section,
+  .content,
+   .projet,
+    .description-principale,
+    #main
+     {
     padding-inline: clamp(1.25em, 4vw, 2.5em);
 
 }
@@ -136,6 +159,7 @@ body{
 }
 
 .massire-name{
+    /*font-size: max(3em, 9vw);*/
     font-size: max(3em, 15vw);
     align-content: center;
     font-family: "Poppins", sans-serif;
@@ -165,10 +189,21 @@ body{
 .nav{
     padding-block-start: 24px;
 }
+/*main*/
+    #main{
+        margin-block-start: 5rem;
+    }
+/*main*/
+
+
 #section-container {
     background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);
-    padding-block: 2rem;
+    /*padding-block: 2rem;*/
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
+
 #section-container section {
     padding-block-end: 3.5rem;
 }
@@ -188,55 +223,33 @@ body{
 
 }
 
-.section-formation{
-    margin-block-start: 6rem;
-    padding-inline: 0;
-    color: white;
-    /* background: linear-gradient(360deg, rgba(0, 123, 186, 1) 0%, rgba(0, 82, 123, 1) 50%, rgba(0, 56, 84, 1) 100%); */
-    /* background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%); */
 
-    text-align: justify;
-}
-
-.section-formation h3{
+/*SECTION*/
+#section-main{
+    padding-block-end: 4rem;
+    display: grid;
     margin: 0;
-    padding-inline: clamp(0.55em, 4vw, 2.5em);
-}
+    grid-gap: 2rem;
+    grid-template-columns:  minmax(100px, 500px);
+    /*grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));*/
+    grid-template-rows:1fr 1fr;
+   /* grid-auto-rows: 1rem;*/
+    grid-auto-flow: dense;
+    justify-content: center;
 
- section h3{
-    padding-block: 20px;
-    background-color: #022739;
 }
-
-
-
-.section-formation .content{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* padding-block: 32px; */
-}
-.section-formation .titre{
-    font-size: clamp(1.55em, 2.3vw, 2.5rem);
-    /*width: 70%;*/
-    width: 96%;
-    max-width: 643px;
-    background: white;
-    color: #1C1D20;
- 
-}
-.section-formation .main{
-    padding-block-start: 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+section{
+    background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);
+    padding-block-start: 2.3rem;
 }
 
 
-/********** Section 3 **********/
-.projet, figure{
-    margin: 0;
-}
+
+    /*END SECTION*/
+
+
+
+/*Footer*/
 
 #footer{
     color: white;
@@ -259,150 +272,30 @@ body{
 .heure-locale{
     opacity: .5;
 }
-.nav-link{
-    display: none;
-}
+/*End Footer*/
 
-/*Appear NavBar*/
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-figure,
-figure p.small {
-	color: #fff;
-}
-figure h3 + p {
-    font-size: 0.8125rem;
-}
-figure footer p.small {
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-.projet {
-    display: grid;
-    list-style-type: none;
-    margin: 0;
-    grid-gap: 2rem;
-    grid-template-columns: minmax(100px, 500px);
-    /*grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));*/
-    grid-template-rows: 1fr 1fr;
-   /* grid-auto-rows: 1rem;*/
-    grid-auto-flow: dense;
-}
-#section-container h3{
-    margin: 0;
-}
-figure {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-figcaption {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    /*padding: 4rem 2.5rem;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 2rem;
-}
-figcaption main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 2rem;
-}
-
-figure p {
-    margin: 0;
-}
-
-figure footer {
+/*Parcours*/
+.parcours{
+    padding-block: 15px;
+    /*padding-inline: 15px;*/
+   /* background: #022739;*/
+    color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-figure footer img {
-    width: auto;
-}
-figure main,
-figure footer {
-    opacity: 0;
+.parcours-date{
+    border-left-style: solid;
+    border-left-color: #ba007b;
+    padding-inline-start: 10px;
+    border-left-width: 5px;
 }
 
-
-figure:hover main,
-figure:hover footer {
-    opacity: 1;
+.active{
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    border-bottom-color: #ba007b;
+    padding-block-end: 0.3rem;
 }
-figcaption{
-    z-index: 1;
-}
-
-figcaption::before {
-    content: " ";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(21, 22, 24, 0.24) 0%, #151618 100%);
-    z-index: -1;
-    opacity: 0;
-    transition-property: opacity;
-}
-
-figure:hover figcaption::before {
-    opacity: 1;
-}
-figure{
-    overflow: hidden;
-}
-
-figure img{
-    transform: scale(1.2);
-    transition-property: transform;
-}
-figure:hover a img{
-    transform: scale(1);
-}
-figure main{
-    transform: translate3d(0, -6rem,0);
-    transition-property: opacity, transform;
-}
-figure:hover main{
-    transform: translate3d(0,0,0);
-}
-figure footer{
-    transform: translate3d(0, 6rem,0);
-    transition-property: opacity, transform;
-}
-figure:hover footer{
-    transform: translate3d(0,0,0);
-}
-
-figcaption:before,
-figure img,
-figure main,
-figure footer,
-figure footer img{
-   transition-duration: var(--def-transition-duration);
-   transition-timing-function: ease-in-out;
-}
-
-figure footer img{
-    transform: translate3d(-3rem,0,0) rotate(360deg);
-    transition-delay: var(--def-transition-duration);
-    opacity: 0;
-}
-figure:hover footer img{
-    transform: translate3d(0,0,0) rotate(0);
-    opacity: 1;
-}
-
 
 /*Appear NavBar*/
 @media (min-width: 544px) {
@@ -428,6 +321,7 @@ figure:hover footer img{
 
     #header p{
         align-content: flex-start;
+        padding-block-start: 2.1rem;
     }
     #header .description{
         justify-self: flex-end;
@@ -435,28 +329,22 @@ figure:hover footer img{
      .massire-name{
         font-size: clamp(5em, 2em,15vw);
     }
+   
 }
 @media(min-width:637px) {
     body{
         border: 2px solid red;
      }
      
-     figure {
-        padding: 2.1rem;
-        background: #ffffff;
-       /* background: #013149;*/
+
+    #section-main{
+        grid-template-columns: repeat(2,minmax(100px, 280px));
+    
     }
-     
-.projet {
-    display: grid;
-    list-style-type: none;
-    margin: 0;
-    grid-gap: 1.2rem;
-    grid-template-columns: repeat(2,minmax(100px, 280px));
-    justify-content: center;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: dense;
-}
+    img{
+        object-fit: cover;
+        object-position: 0% 2%;
+    }
 }
 /*Appear NavBar*/
 @media (min-width: 776px) {
