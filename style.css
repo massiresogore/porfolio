@@ -335,6 +335,16 @@ section{
     body{
         border: 2px solid red;
      }
+     #header{
+        height: 400px;
+     }
+     #header p{
+        padding-block-start: 4.3rem;
+     }
+     .massire-image{
+        height: 400px;
+        object-position: 20% 0;
+     }
      
 
     #section-main{
