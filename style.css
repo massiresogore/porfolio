@@ -315,6 +315,7 @@ section{
     gap: 2rem;
     margin-block-end: 2rem;
     padding-block-end: 2.3rem;
+    justify-content: center;
 }
 .exp-1 > p,
 .exp-2 > p,
@@ -344,7 +345,9 @@ section{
     font-weight: 600;
 }
 
-
+.regle, .regle-2{
+    display: none;
+}
 
 /*Appear NavBar*/
 @media (min-width: 544px) {
@@ -406,9 +409,14 @@ section{
     }
 
     /*** Expérience ***/
-    .section-cv{
-        grid-template-columns: 1fr 50px 1fr;
+    .regle,.regle-2{
+        display: block;
     }
+    .section-cv {
+        grid-template-columns: 1fr 18px 1fr;
+       
+    }
+
     .exp-1,.exp-2{
         grid-column: 1/2;
     }
@@ -421,6 +429,21 @@ section{
     .exp-4{
         grid-row: 2/3;
     }
+    .regle{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .regle-2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .fix{
+        border-left-width: 5px;
+        padding-left: 5px;
+    }
+
+  
+   
   
 
 }
