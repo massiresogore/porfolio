@@ -195,7 +195,7 @@ body{
 }
 /*main*/
     #main{
-        margin-block-start: 5rem;
+        margin-block-start: 2rem;
     }
 /*main*/
 
@@ -304,6 +304,7 @@ section{
 /********** Expérience pro **********/
 .cv-title{
     font-size: var(--h4 );
+    margin: 0;
 }
 .section-cv{
     color: white;
@@ -347,6 +348,10 @@ section{
 
 .regle, .regle-2{
     display: none;
+}
+.fix{
+    border-left-width: 5px;
+    padding-left: 5px;
 }
 
 /*Appear NavBar*/
@@ -433,17 +438,13 @@ section{
     .regle{
         grid-column: 3/4;
         grid-row: 1/2;
-        border: 1px solid red;
         width: 18px;
     }
     .regle-2{
         grid-column: 3/4;
         grid-row: 2/3;
     }
-    .fix{
-        border-left-width: 5px;
-        padding-left: 5px;
-    }
+  
 
   
    
