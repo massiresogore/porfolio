@@ -302,7 +302,9 @@ section{
 }
 
 /********** Expérience pro **********/
-
+.cv-title{
+    font-size: var(--h4 );
+}
 .section-cv{
     color: white;
     font-family: "JetBrains Mono", monospace;
@@ -310,11 +312,16 @@ section{
     font-weight: 100;
     font-style: normal;
     display: grid;
-    gap: 10px;
+    gap: 2rem;
     margin-block-end: 2rem;
     padding-block-end: 2.3rem;
 }
-.exp-1 > p{
+.exp-1 > p,
+.exp-2 > p,
+.exp-3 > p,
+.exp-4 > p
+
+{
     margin: 0;
     line-height: 1.9;
 }
@@ -397,6 +404,25 @@ section{
         object-fit: cover;
         object-position: 0% 2%;
     }
+
+    /*** Expérience ***/
+    .section-cv{
+        grid-template-columns: 1fr 50px 1fr;
+    }
+    .exp-1,.exp-2{
+        grid-column: 1/2;
+    }
+    .exp-3,.exp-4{
+        grid-column: 3/4;
+    }
+    .exp-3{
+        grid-row: 1/2;
+    }
+    .exp-4{
+        grid-row: 2/3;
+    }
+  
+
 }
 /*Appear NavBar*/
 @media (min-width: 776px) {
