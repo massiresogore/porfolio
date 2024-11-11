@@ -312,7 +312,7 @@ section{
     font-weight: 100;
     font-style: normal;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     margin-block-end: 2rem;
     padding-block-end: 2.3rem;
     justify-content: center;
@@ -413,15 +413,16 @@ section{
         display: block;
     }
     .section-cv {
-        grid-template-columns: 1fr 18px 1fr;
+        grid-template-columns: repeat(2, auto-fit) 18px repeat(2, auto-fit);
+        grid-template-rows: 1fr 1fr;
        
     }
 
     .exp-1,.exp-2{
-        grid-column: 1/2;
+        grid-column: 1/3;
     }
     .exp-3,.exp-4{
-        grid-column: 3/4;
+        grid-column: 4/6;
     }
     .exp-3{
         grid-row: 1/2;
@@ -430,11 +431,13 @@ section{
         grid-row: 2/3;
     }
     .regle{
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 1/2;
+        border: 1px solid red;
+        width: 18px;
     }
     .regle-2{
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 2/3;
     }
     .fix{
