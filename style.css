@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
 
+/*Font de page*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+/*Font de page*/
+
 @layer base {
     :root {
         --base-size: 1rem;
@@ -296,6 +300,44 @@ section{
     border-bottom-color: #ba007b;
     padding-block-end: 0.3rem;
 }
+
+/********** Expérience pro **********/
+
+.section-cv{
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    display: grid;
+    gap: 10px;
+    margin-block-end: 2rem;
+    padding-block-end: 2.3rem;
+}
+.exp-1 > p{
+    margin: 0;
+    line-height: 1.9;
+}
+
+.exp-ville,
+.exp-description,
+.exp-tech,
+.exp-tech-1
+{
+   font-size: 12px;
+}
+
+.exp-title{
+    font-weight: 800;
+}
+.exp-ville{
+    font-weight: 600;
+}
+.exp-tech{
+    font-weight: 600;
+}
+
+
 
 /*Appear NavBar*/
 @media (min-width: 544px) {
