@@ -44,7 +44,7 @@
         
         <div id="section-main">
             <!---------- Section Projet ---------->
-            <section>
+            <section class="section-projet">
                <a href="#">
                <div>
                 <img src="./images/projets/projet1.png" alt="">
@@ -52,7 +52,7 @@
                 <div class="parcours">Intégration <span class="parcours-date">2024</span></div>
                 </a>
             </section>
-            <section>
+            <section class="section-projet">
                <a href="#">
                <div>
                 <img src="./images/projets/projet2.png" alt="">
@@ -61,7 +61,7 @@
                 <div class="parcours">Développement <span class="parcours-date">2024</span></div>
                 </a>
             </section>
-            <section>
+            <section class="section-projet">
                <a href="#">
                <div>
                 <img src="./images/projets/projet2.png" alt="">
@@ -70,7 +70,7 @@
                 <div class="parcours">Développement <span class="parcours-date">2024</span></div>
                 </a>
             </section>
-            <section>
+            <section class="section-projet">
                <a href="#">
                <div>
                 <img src="./images/projets/projet2.png" alt="">
@@ -79,19 +79,6 @@
                 <div class="parcours">Développement <span class="parcours-date">2024</span></div>
                 </a>
             </section>
-
-
-            <!---------- Section 3 ---------->
-            <!--  <section class="section-3">
-                <h3 class="Formations titre">Compétences</h3>
-                <div>
-                   <h6>htmlCss</h6> -->
-                    <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 416.86 43"><defs><style>.cls-1{isolation:isolate;}.cls-2{opacity:0.8;}.cls-3{fill:#f7f7f7;}.cls-4{fill:#fff;}.cls-5{fill:url(#Dégradé_sans_nom_18);}.cls-6{opacity:0.4;mix-blend-mode:multiply;}.cls-7{fill:#b91e7d;}.cls-8{fill:url(#Dégradé_sans_nom_21);}.cls-9{fill:#9e005d;}</style><linearGradient id="Dégradé_sans_nom_18" x1="211.86" y1="2.77" x2="211.86" y2="31.05" gradientUnits="userSpaceOnUse"><stop offset="0.02" stop-opacity="0.25"></stop><stop offset="0.06" stop-color="#0b0b0b" stop-opacity="0.12"></stop><stop offset="0.35" stop-color="#141414" stop-opacity="0"></stop></linearGradient><linearGradient id="Dégradé_sans_nom_21" x1="99.11" y1="2.77" x2="99.11" y2="31.05" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#b3f5bd"></stop><stop offset="1" stop-color="#77ad81"></stop></linearGradient></defs><g class="cls-1"><g id="Calque_1" data-name="Calque 1"><g class="cls-2"><rect class="cls-3" x="6.86" y="4.14" width="200" height="30" rx="15"></rect><rect class="cls-3" x="6.86" y="4.14" width="200" height="30" rx="15"></rect></g><rect class="cls-4" x="6.86" y="2.54" width="200" height="30" rx="15"></rect><rect class="cls-5" x="6.86" y="2.54" width="150" height="30" rx="15"></rect><image class="cls-6" width="150" height="43" xlink:href="data:image/png;base64,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"></image><rect class="cls-7" x="6.86" y="2.54" width="150" height="30" rx="15"></rect><rect class="cls-8" x="6.86" y="2.54" width="150" height="30" rx="15"></rect><rect class="cls-8" x="6.86" y="2.54" width="150" height="30" rx="15"></rect><rect class="cls-9" x="6.86" y="2.54" width="150" height="30" rx="15"></rect></g></g></svg>
-
-                </div>
-            </section>
-            -->
-
                     
         </div>
     </main>

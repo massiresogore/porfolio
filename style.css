@@ -205,7 +205,8 @@ body{
 }
 /*main*/
     #main{
-        margin-block-start: 2rem;
+        background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);
+        padding-block-start: 1rem;
     }
 /*main*/
 
@@ -253,8 +254,19 @@ body{
 
 }
 section{
-    background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);
-    padding-block-start: 2.3rem;
+   /* background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);*/
+   /* padding-block-start: 2.3rem;*/
+   /*background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgb(0 56 84 / 21%) 0%);*/
+}
+.section-projet{
+        background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);
+        padding-block-start: 2.3rem;
+    }
+    .section-formation{
+        /*background: linear-gradient(305deg, rgb(0 123 186 / 7%) 52%, rgb(3 45 67) 50%, rgb(0 56 84 / 21%) 0%);*/
+    }
+    .section-cv{
+   /* background: linear-gradient(305deg, rgb(0 123 186 / 7%) 52%, rgb(3 45 67) 50%, rgb(0 56 84 / 21%) 0%);*/
 }
 
 
@@ -313,7 +325,7 @@ section{
 
 /********** Expérience pro **********/
 .cv-title{
-    font-size: 22px;
+    font-size: 16px;
        /*font-size: var(--h4 );*/
     /*margin: 0;*/
 }
@@ -321,7 +333,7 @@ section{
     color: white;
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 100;
+    /*font-weight: 100;*/
     font-style: normal;
     display: grid;
     /*gap: 1rem;*/
@@ -363,8 +375,13 @@ section{
 }
 
 .exp-title{
+    color: #FFFFFF;
     font-weight: 800;
     padding-block-end: 0.5rem;
+   /* margin-block-end: 0;*/
+    letter-spacing: 2px;
+    padding-block-start: 2rem;
+    text-transform: uppercase;
 }
 .exp-ville{
     font-weight: 600;
@@ -388,6 +405,44 @@ section{
     padding-block-start: 5px;
 }
 
+/********** FORMATION **********/
+.section-formation{
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    margin-block-end: 2rem;
+    padding-block-end: 2.3rem;
+    justify-content: center;
+}
+
+
+.section-formation p{
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.9;
+    padding-inline-start: 20px;
+    font-weight: 200;
+}
+
+.section-formation .form-date{
+    padding-inline-start: 0;
+
+}
+
+.section-formation .form-ville{
+    font-weight: 600;
+}
+
+.form-block-1{
+    display: flex;
+    flex-direction: column;
+   
+}
+.padding-block-start{
+    padding-block-start: 2rem;
+}
 /*Appear NavBar*/
 @media (min-width: 544px) {
 
