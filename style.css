@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 /*Font de page*/
 
+/*Description Générale de page*/
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+/*Description Générale de page*/
+
 @layer base {
     :root {
         --base-size: 1rem;
@@ -160,6 +164,11 @@ body{
 }
 #header .description{
     align-content: center;
+  font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 
 .massire-name{
