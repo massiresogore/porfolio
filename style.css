@@ -169,6 +169,7 @@ body{
   font-weight: 900;
   font-style: normal;
   letter-spacing: 2px;
+  font-size: 18px;
 }
 
 .massire-name{
@@ -312,7 +313,8 @@ section{
 
 /********** Expérience pro **********/
 .cv-title{
-    font-size: var(--h4 );
+    font-size: 22px;
+       /*font-size: var(--h4 );*/
     /*margin: 0;*/
 }
 .section-cv{
@@ -338,6 +340,19 @@ section{
     line-height: 1.9;
   
 }
+.exp-1 > p:not(:first-child),
+.exp-2 > p:not(:first-child),
+.exp-3 > p:not(:first-child),
+.exp-4 > p:not(:first-child)
+
+{
+
+    padding-inline-start: 20px;
+}
+
+.padding-inline-start{
+}
+
 
 .exp-ville,
 .exp-description,
@@ -369,8 +384,8 @@ section{
     border-top-color: #BA007B;
     border-top-style: solid;
     border-top-width: 1px;
-    position: relative;
-    bottom: 1px;
+    width: fit-content;
+    padding-block-start: 5px;
 }
 
 /*Appear NavBar*/
@@ -408,6 +423,9 @@ section{
    
 }
 @media(min-width:637px) {
+    .cv-title{
+           font-size: var(--h4 );
+    }
     body{
         border: 2px solid red;
      }
@@ -473,6 +491,9 @@ section{
 /*Appear NavBar*/
 @media (min-width: 776px) {
  
+    .cv-title{
+        font-size: var(--h4 );
+    }
     #header{
         grid-template-columns: 1fr 1fr 1fr;
     }
