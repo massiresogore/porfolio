@@ -304,7 +304,7 @@ section{
 /********** Expérience pro **********/
 .cv-title{
     font-size: var(--h4 );
-    margin: 0;
+    /*margin: 0;*/
 }
 .section-cv{
     color: white;
@@ -313,7 +313,8 @@ section{
     font-weight: 100;
     font-style: normal;
     display: grid;
-    gap: 1rem;
+    /*gap: 1rem;*/
+    gap: 4rem;
     margin-block-end: 2rem;
     padding-block-end: 2.3rem;
     justify-content: center;
@@ -326,6 +327,7 @@ section{
 {
     margin: 0;
     line-height: 1.9;
+  
 }
 
 .exp-ville,
@@ -338,9 +340,12 @@ section{
 
 .exp-title{
     font-weight: 800;
+    padding-block-end: 0.5rem;
 }
 .exp-ville{
     font-weight: 600;
+    display: flex;
+    gap: 1rem;
 }
 .exp-tech{
     font-weight: 600;
@@ -352,6 +357,11 @@ section{
 .fix{
     border-left-width: 5px;
     padding-left: 5px;
+    border-top-color: #BA007B;
+    border-top-style: solid;
+    border-top-width: 1px;
+    position: relative;
+    bottom: 1px;
 }
 
 /*Appear NavBar*/
