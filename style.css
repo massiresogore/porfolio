@@ -207,10 +207,11 @@ body{
 .color-back-2
 {
     position: absolute;
-    width: 50%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     height: 60px;
+    padding-block-end: 1rem;
 }
 .white{
     background-color: white;
@@ -218,9 +219,10 @@ body{
 
 /*main*/
   .main{
-        background: linear-gradient(90deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);
+        /*background: linear-gradient(90deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);*/
         /*background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);*/
         padding-block-start: 1rem;
+        background: linear-gradient(90deg, rgb(19 58 78) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);
     }
 /*main*/
 
@@ -364,9 +366,10 @@ section{
 {
     margin: 0;
     line-height: 1.9;
-    font-size: 15px;
+    font-size: 18px;
+    /*font-size: 15px;*/
     font-weight: 900;
-  
+  text-align: justify;
 }
 .exp-1 > p:not(:first-child),
 .exp-2 > p:not(:first-child),
@@ -374,7 +377,7 @@ section{
 .exp-4 > p:not(:first-child)
 
 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 100;
 }
 
@@ -384,7 +387,14 @@ section{
 .exp-tech,
 .exp-tech-1
 {
-   font-size: 12px;
+   font-size: 18px;
+}
+
+.section-cv
+.exp-tech,
+.section-cv .exp-tech-1
+{
+   text-align: left;
 }
 
 .exp-title{
@@ -430,7 +440,7 @@ section{
     padding-block-end: 2.3rem;
     justify-content: center;
     display: grid;
-    gap: 3rem;
+    row-gap: 2rem;
     font-size: 15px;
 }
 
@@ -480,7 +490,9 @@ p.form-date{
  .section-formation .form-svg {
   text-align: end;
 }
-
+.form-svg{
+    display: none;
+}
 /*Appear NavBar*/
 @media (min-width: 544px) {
 
@@ -520,7 +532,7 @@ p.form-date{
            font-size: var(--h4 );
     }
     body{
-        border: 2px solid red;
+     
      }
      #header{
         height: 400px;
@@ -543,10 +555,40 @@ p.form-date{
         object-position: 0% 2%;
     }
 
-    /*** Expérience ***/
-    .regle,.regle-2{
-        display: block;
+    
+  
+
+}
+/*Appear NavBar*/
+@media (min-width: 776px) {
+ 
+    .cv-title{
+        font-size: var(--h4 );
     }
+    #header{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .nav{
+        grid-column: 1/4;
+    }
+    .massire-name{
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
+   #header .description{
+    justify-self: center;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+}
+
+@media(min-width:843px) {
+    /*** Expérience ***/
+        .regle,.regle-2{
+            display: block;
+        }
+
+    
     .section-cv {
         grid-template-columns: repeat(2, auto-fit) 18px repeat(2, auto-fit);
         grid-template-rows: 1fr 1fr;
@@ -574,36 +616,34 @@ p.form-date{
         grid-column: 3/4;
         grid-row: 2/3;
     }
-  
-
-  
    
-  
+
+    
+    
+
+
+
+
+        /********** FORMATION **********/
+    .section-formation{
+        column-gap: 3rem;
+    }
+
+
+    .section-formation{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 50px;
+    }
+    .form-container-2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .form-svg{
+        display: block;
+    }
 
 }
-/*Appear NavBar*/
-@media (min-width: 776px) {
- 
-    .cv-title{
-        font-size: var(--h4 );
-    }
-    #header{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .nav{
-        grid-column: 1/4;
-    }
-    .massire-name{
-        grid-row: 3/4;
-        grid-column: 1/4;
-    }
-   #header .description{
-    justify-self: center;
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-}
-
 
 
 
