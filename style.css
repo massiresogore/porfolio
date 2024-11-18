@@ -95,17 +95,66 @@
 */
 /********** Header **********/
 #header{
-    padding-inline: clamp(1.25em, 4vw, 2.5em);
+    /*padding-inline: clamp(1.25em, 4vw, 2.5em);*/
     display: grid;
     height: 100vh;
-    border: 2px solid red;
+    grid-template-columns:1fr ;
+    grid-template-rows:1fr ;
 }
+#header .header_block-1{
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: max-content;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,fit-content);
+   text-align: center;
+   place-items: center;
+   padding-block: 24px;
+   padding-inline: clamp(1.25em, 4vw, 2.5em);
+   gap: 1rem;
+   padding-block-start: 6rem;
+   
+
+}
+.logo,
+.reseau-sociaux,
+.nav{
+    align-self: center;
+}
+.logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: start;
+}
+.reseau-sociaux{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: baseline;
+    justify-self: end;
+    align-self: center;
+
+}
+.nav{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.nav-link{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
 a{
     text-decoration: none;
     color: inherit;
-}
-.nav-link{
-    display: none;
 }
 
 img{
@@ -114,8 +163,66 @@ img{
     object-fit: cover;
     display: block;
 }
+.massire-image{
+    position: relative;
+/*  height: 630px;*/
+    border: 1px solid blueviolet;
+}
+.photo{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: -1;
+    position: relative;
+}
+.photo::before{
+    position: absolute;
+    inset: 0;
+    content: " ";
+   /* background-color:  rgba(15, 21, 37, .8);*/
+    background-color:  rgb(15 21 37 / 90%);
+    z-index: 1;
+}
+
+.reseau-sociaux{
+
+    text-align: justify;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+.reseau-sociaux, svg{
+    fill:#BA007B;
+    
+}
 
 
+.massire-name{
+    padding-left: 15px;
+    font-size: max(5em, 9vw);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: white;
+    align-self: flex-end;
+}
+.description-principale{
+    margin: 0;
+    padding-block:1.3rem ;
+    color: white;
+    background-color: #BA007B;
+}
+.subnav ,
+.vide{
+    display: none;
+}
+
+/********** End Header **********/
 /*** 711 **/
 body{
     color: #1C1D20;
@@ -129,7 +236,7 @@ body{
 #container{
 }
 
-#header,
+
  section,
   .content,
    .projet,
@@ -153,7 +260,7 @@ body{
 
 #header p, .content p,.content h6{
     margin: 0;
-}
+}/
 .nav{
 
     display: flex;
@@ -204,9 +311,7 @@ body{
 
     align-self: end;
 }
-.nav{
-    padding-block-start: 24px;
-}
+
 .color-back,
 .color-back-2
 {
@@ -559,7 +664,8 @@ p.form-date{
 /*Appear NavBar*/
 @media (min-width: 544px) {
 
-
+    /*
+    
     .nav-burger{
         display: none;
         
@@ -587,6 +693,7 @@ p.form-date{
      .massire-name{
         font-size: clamp(5em, 2em,15vw);
     }
+    */
    
 }
 @media(min-width:637px) {
@@ -612,7 +719,7 @@ p.form-date{
     }
     img{
         object-fit: cover;
-        object-position: 0% 2%;
+        object-position: 0% 100%;
     }
     /********** Expérience pro **********/
     .exp-title{
