@@ -93,9 +93,13 @@
 /*
     max-width:615px
 */
-
-
-/********** Nav **********/
+/********** Header **********/
+#header{
+    padding-inline: clamp(1.25em, 4vw, 2.5em);
+    display: grid;
+    height: 100vh;
+    border: 2px solid red;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -104,7 +108,6 @@ a{
     display: none;
 }
 
-/*Appear NavBar*/
 img{
     width: 100%;
     height: 100%;
@@ -136,6 +139,7 @@ body{
     padding-inline: clamp(1.25em, 4vw, 2.5em);
 
 }
+/*
 #header{
     color: var(--default-color);
     display: grid;
@@ -173,7 +177,6 @@ body{
 }
 
 .massire-name{
-    /*font-size: max(3em, 9vw);*/
     font-size: max(3em, 9vw);
     align-content: center;
     font-family: "Poppins", sans-serif;
@@ -184,6 +187,7 @@ body{
 .massite-dot{
     color:  #BA007B;;
 }
+    */
 .description{
     /*font-size: clamp(1.55em,2.3vw, 2.5rem);*/
 }
@@ -239,6 +243,7 @@ body{
     padding-block-end: 3.5rem;
 }
 
+/*
 .description-principale{
     text-align: justify;
     font-family: "Afacad", sans-serif;
@@ -246,14 +251,13 @@ body{
     font-weight: 300;
     font-style: normal;
     color: white;
-   /* margin-block-start: 74px;*/
     margin: 0;
     padding-block: 32px;
     padding-bottom: calc(81px - 12px);
     background-color: #BA007B;
 
 }
-
+*/
 
 /*SECTION*/
 #section-main{
@@ -589,9 +593,7 @@ p.form-date{
     .cv-title{
            font-size: var(--h4 );
     }
-    body{
-     
-     }
+   /*
      #header{
         height: 400px;
      }
@@ -602,7 +604,7 @@ p.form-date{
         height: 400px;
         object-position: 20% 0;
      }
-     
+     */
 
     #section-main{
         grid-template-columns: repeat(2,minmax(100px, 280px));
@@ -632,6 +634,7 @@ p.form-date{
     .cv-title{
         font-size: var(--h4 );
     }
+    /*
     #header{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -647,7 +650,7 @@ p.form-date{
         grid-column: 3/4;
         grid-row: 2/3;
     }
-
+    */
      /********** Compétences **********/
      .section-competence .uiux h4{
         text-align:  end;
