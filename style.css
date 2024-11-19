@@ -34,7 +34,10 @@
         --marge-bottom-input: 10px;
 
         /*Form*/
-        --form-paddind: 10px
+        --form-paddind: 10px;
+
+        /*Color*/
+        --primary-color:#BA007B;
     }
 
     html {
@@ -89,7 +92,9 @@
         height: 100%;
     }
 }
-
+.primary{
+    color: var(--primary-color);
+}
 /*
     max-width:615px
 */
@@ -100,7 +105,9 @@
     height: 100vh;
     grid-template-columns:1fr ;
     grid-template-rows:1fr ;
+    position: relative;
 }
+/********** Header **********/
 #header .header_block-1{
     color: white;
     grid-column: 1 / 2;
@@ -108,8 +115,9 @@
     height: max-content;
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
+    font-size: large;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2,fit-content);
@@ -118,7 +126,9 @@
    padding-block: 24px;
    padding-inline: clamp(1.25em, 4vw, 2.5em);
    gap: 1rem;
-   padding-block-start: 6rem;
+  /* padding-block-start: 6rem; #999e9d*/
+   padding-block-start: 1rem;
+
    
 
 }
@@ -166,7 +176,6 @@ img{
 .massire-image{
     position: relative;
 /*  height: 630px;*/
-    border: 1px solid blueviolet;
 }
 .photo{
     grid-column: 1 / 2;
@@ -179,8 +188,9 @@ img{
     inset: 0;
     content: " ";
    /* background-color:  rgba(15, 21, 37, .8);*/
-    background-color:  rgb(15 21 37 / 90%);
-    z-index: 1;
+    /*background-color:  rgb(15 21 37 / 90%);*/
+    /*z-index: 1;*/
+    background: #999e9d;
 }
 
 .reseau-sociaux{
@@ -216,11 +226,29 @@ img{
     padding-block:1.3rem ;
     color: white;
     background-color: #BA007B;
+
 }
 .subnav ,
 .vide{
     display: none;
 }
+.description{
+    /*font-size: clamp(1.55em,2.3vw, 2.5rem);*/
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+    justify-self: flex-end;
+    color: white;
+    font-family: "Wittgenstein", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 18px;
+    position: relative;
+}
+
+
 
 /********** End Header **********/
 /*** 711 **/
@@ -295,9 +323,7 @@ body{
     color:  #BA007B;;
 }
     */
-.description{
-    /*font-size: clamp(1.55em,2.3vw, 2.5rem);*/
-}
+
 .ville{
     /* border-right-width: 10px;
     border-right-color: #BA007B;
@@ -734,6 +760,50 @@ p.form-date{
     }
   
 
+}
+@media(min-width:724px) {
+    #header{
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(7,auto);
+    }
+  
+    .massire-image{
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+      /*  right: 15%;*/
+        width: 60%;
+        margin: auto;
+        bottom: 10%;
+    }
+    #header .header_block-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .massire-name {
+        grid-column:1/2;
+        grid-row: 1/2;
+        padding-block: 3rem;
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+        padding-block-end: 8.3rem;
+    }
+    .description {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0;
+        align-self: center;
+    }
+    #header .header_block-1{
+        justify-content: space-around;
+        display: flex;
+    }
+    .description-principale {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: fit-content;
+        align-self: flex-end;
+    }
 }
 /*Appear NavBar*/
 @media (min-width: 776px) {
