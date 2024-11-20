@@ -978,10 +978,12 @@ p.form-date{
         margin: 0;
         color: rgb(255, 255, 255);/*For test*/
         background-color: #036599;;
+        text-align: center;
+        padding-block-start: .7rem;
     }
     .description-principale {
         grid-column: 3/5;
-        grid-row: 3/4;
+        grid-row: 3/6;
         height:initial;
         align-self: initial;
         background-color: #036599;
@@ -1020,22 +1022,22 @@ p.form-date{
     }
     .massire-name-bg {
         grid-column: 2/4;
-        grid-row: 2/4;
+        grid-row: 2/5;
          background-color: #ba027b;;
          z-index: 1;
     }
   
     .subnav{
         grid-column: 2/4;
-        grid-row: 4/6;
+        grid-row: 5/6;
         align-self: center;
-        z-index: 2;
+        z-index: 3;
     }
     .bg-subnav{
         grid-column: 2/4;
-        grid-row: 4/6;
+        grid-row: 5/6;
         background-color: rgb(255, 255, 255);/*For test*/
-        z-index: 1;
+        z-index: 2;
     }
     .subnav .nav-link{
         justify-content: space-evenly;
