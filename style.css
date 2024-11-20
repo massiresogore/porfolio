@@ -239,13 +239,14 @@ img{
     align-self: flex-end;
     justify-self: flex-end;
     color: white;
-    font-family: "Wittgenstein", serif;
-    font-optical-sizing: auto;
     font-weight: 900;
-    font-style: normal;
     letter-spacing: 2px;
     font-size: 18px;
     position: relative;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    /* font-weight: 100; */
+    font-style: normal;
 }
 
 
