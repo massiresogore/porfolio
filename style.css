@@ -911,6 +911,9 @@ p.form-date{
 
 
 @media(min-width:1000px){
+    .projet{
+        color: white;
+    }
     .desktop{
         display: block;
     }
