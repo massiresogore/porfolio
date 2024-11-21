@@ -279,7 +279,7 @@ body{
 
 }
 .projet{
-    color: white;
+    
 }
 /*
 #header{
@@ -771,6 +771,7 @@ p.form-date{
 }
 @media(min-width:724px) {
     #header{
+        height: auto;
         grid-template-columns: 1fr ;
        /* grid-template-rows: repeat(7,auto);*/
     }
@@ -794,7 +795,7 @@ p.form-date{
         margin: 0;
         padding: 0;
         justify-self: center;
-        padding-block-end: 6.1rem;
+        padding-block-end: 10rem;
     }
     .description {
         grid-column: 1/2;
@@ -1071,3 +1072,6 @@ p.form-date{
     
    
 }
+
+/*AJOUT de Pading dans massir.name et enlevenement de color dans .projet h3*/
+/* padding-block-end: 10rem;*/
