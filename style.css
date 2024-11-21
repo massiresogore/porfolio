@@ -935,7 +935,7 @@ p.form-date{
     }
     #container{
         /*background: linear-gradient(305deg, rgba(0, 123, 186, 1) 0%, rgb(3 45 67) 50%, rgba(0, 56, 84, 1) 100%);*/
-        margin-inline: 4rem;
+        /*margin-inline: 4rem;*/
     }
     .subnav ,
     .vide{
@@ -945,8 +945,12 @@ p.form-date{
        /* background-color: rgba(255, 0, 0, 0.217);*/
     }
     #header{
+        height: 100vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(5,1fr);
+    }
+    .img-nav-desktop-width{
+        width: 50px;
     }
     #header .header_block-1 {
         grid-column: 1/5;
