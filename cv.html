@@ -494,27 +494,43 @@
                 <p class="version">Version</p>
                 <p>2024 © Edition</p>
             </div>
-            <div class="Heure locale">
+            <div class="Heure locale" >
                 <p class="heure-locale">Heure locale</p>
-                <span class="" style="color: #fff;" id="time"></div>
+                <div id="time"></div>
+                <div style="display: flex; gap: .2rem">
+                    <div id="hour"></div>:
+                    <div id="minutes"></div>:
+                    <div id="secondes"></div>
+                </div>
             </div>
         </div>
     
     </footer>
     <script >
 
-        document.querySelector("#time").textContent =  new Date().toLocaleString();;
+        let hoursText = document.querySelector("#hour");
+        let minuteText = document.querySelector("#minutes")
+        let secondeText = document.querySelector("#secondes");
 
+        const changeDate = ()=> {
+            const date = new Date();
+            document.querySelector("#time").textContent = date.toDateString();
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+            const secondes = date.getSeconds();
+            hoursText.textContent = hours.toString();
+            minuteText.textContent = minutes.toString();
+            secondeText.textContent = secondes.toString();
+        }
+
+        setInterval(changeDate,1000);
         /*Link Change*/
         document.querySelectorAll(".nav-link li a").forEach(link => {
             if(link.href === window.location.href){
-              
-        
-                 
                 link.classList.add("active");
-                    
             }
         })
+
     </script>
 </body>
 </html>
